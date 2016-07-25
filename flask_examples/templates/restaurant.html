@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Static Files</title>
+    <!-- The app has access to any static file within the
+    /static directory by the /static path -->
+    <link href="/static/animate.css" rel="stylesheet">
+    <link href="/static/food.css" rel="stylesheet">
+    <script src="/static/jquery.js"></script>
+
+  </head>
+
+  <!-- moved Restaurant form into the body -->
+  <body>
+
+    <form action="/submit_form" method="POST">
+      <p>
+        <label for="name">Name</label>
+        <input type="text" name="name">
+      </p>
+      <p>
+        <label for="category">Category</label>
+        <input type="text" size="100" name="category">
+      </p>
+      <p>
+        <button type="submit">Create Restaurant</button>
+      </p>
+    </form>
+
+  </body>
+
+<!-- This is where the form ends -->
+
+
+
+</html>

@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- You can access the session object in the template
+from anywhere, even if it's not supplyed in the call to render_template -->
+<h1>Hello, {{session['name']}}!</h1>
+<a href="/clear_name">Clear Name</a>
+{% endblock %}
